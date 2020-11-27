@@ -3,6 +3,8 @@
 
 typedef float four_vector_t __attribute__((vector_size(16)));
 
+float four_vector_norm_xy(four_vector_t vector);
+
 float four_vector_norm_3d(four_vector_t vector);
 
 float four_vector_norm_4d(four_vector_t vector);
