@@ -56,8 +56,8 @@ new_test(scalar_3d_orthogonal,
 	 assert_that(fabs(four_vector_scalar_3d(vector1,vector2))<1e-12);
 	);
 
-new_test(scalar_3d_orthogonal,
+new_test(scalar_4d_orthogonal,
 	 four_vector_t vector1 = {1,0,0,0};
-	 four_vector_t vector2 = {0,1,0,0};
-	 assert_that(fabs(four_vector_scalar_3d(vector1,vector2))<1e-12);
+	 four_vector_t vector2 = {0,0,0,1};
+	 assert_that(fabs(four_vector_scalar_4d(vector1,vector2))<1e-12);
 	);

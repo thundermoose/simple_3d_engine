@@ -1,8 +1,8 @@
-compiler := gcc
+compiler := gcc -Wall -Werror
 
-compiler_flags := -I./source -mavx2
-linker_flags := -lm 
-test_linker_flags := -lm -lthundertester
+compiler_flags := -I./source -mavx2 $(shell pkg-config --cflags gtk+-3.0)
+linker_flags := -lm $(shell pkg-config --libs gtk+-3.0)
+test_linker_flags := $(linker_flags) -lthundertester
 
 source := $(shell find ./source -regex [^\#]*\\.c)
 objects := $(source:./source/%.c=./.tmp/%.o)
