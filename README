@@ -1,0 +1,6 @@
+A CPU driven 3D graphics engine
+
+To learn about basic 3D graphics, I decided to write my own engine. This 
+will not be able to compete with any modern comercial system, that uses GPU.
+The end goal is to implement a simple 3D maze game, similar to the old Windows
+screen saver maze game.
