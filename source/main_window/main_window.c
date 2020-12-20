@@ -55,7 +55,7 @@ gboolean draw_on_window(GtkWidget *widget,
 	static int position = 0;
 	cairo_set_font_size(cr,12.0);
 	cairo_translate(cr,0,position);
-	cairo_set_source_rgb(cr,0,1,1);
+	cairo_set_source_rgb(cr,1,0,1);
 	cairo_text_path(cr,"Hello World");
 	cairo_fill(cr);
 	position++;
